@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center"
+    android:padding="8dp"
+    tools:context=".ui.login.MainActivity">
+    <TextView
+        android:layout_marginBottom="48dp"
+        android:text="@string/login_to_chat"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/et_email"
+        android:textColorHint="#D9FFFFFF"
+        android:textColor="#D9FFFFFF"
+        android:hint="@string/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:importantForAutofill="no" />
+    <EditText
+        android:id="@+id/et_password"
+        android:textColor="#D9FFFFFF"
+        android:textColorHint="#D9FFFFFF"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no" />
+    <Button
+        android:id="@+id/btn_login"
+        android:text="@string/login"
+        android:textColor="#fff"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:targetApi="lollipop" />
+</LinearLayout>
